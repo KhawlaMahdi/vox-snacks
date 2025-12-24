@@ -1,0 +1,372 @@
+/* Three Main WebFonts */
+@font-face {
+    font-family: 'FontOne';
+    src: url(fonts/Cinzel-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'FontTwo';
+    src: url(fonts/Merriweather-VariableFont_opsz\,wdth\,wght.ttf);
+}
+@font-face {
+    font-family: 'FontThree';
+    src: url(fonts/LibreBaskerville-Regular.ttf);
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #b89f86;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+header img{
+    height: 10%;
+    width: 10%;
+}
+nav, nav a{ 
+    display: flex;
+    margin: 1rem;
+    color: rgb(89, 51, 34);
+    text-decoration: none;
+    font-family: 'FontOne';
+    font-size: 1.5vw;
+    font-weight: bold;
+    transition: 1s;
+}
+nav a{
+    color: rgb(250, 246, 239);
+    border: 0.2rem solid rgb(89, 51, 34);
+    border-radius: 3rem;
+    background-color: rgb(89, 51, 34);
+    padding: 0.4rem;
+}
+nav a:hover{
+    color: rgb(250, 246, 239);
+    text-decoration: underline;
+    font-weight: bolder;
+    padding: 0.5rem;
+}
+main{
+    background-color: #faf6ef;
+}
+
+
+
+footer{
+    background-color: #b89f86;
+    color: rgb(250, 246, 239);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+    width: auto;
+    font-family: 'FontThree';
+    font-size: 0.8vw;
+}
+#contact{
+    color: rgb(250, 246, 239);
+    text-decoration: none;
+}
+                                                      /*Khawla snacks*/
+  /*product type design*/
+.producttype{
+    font-family:'FontTwo';
+    margin: 0;
+    font-size: 2.5rem;
+    color: rgb(89, 51, 34);
+}
+/*to coordinate the cart and popcorn title at same level*/
+.container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2rem 2rem;
+    max-width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+/*put the titles on the center*/
+.title{
+    flex: 1;
+    text-align: center;
+}
+/*style cart icon*/
+.cart{
+    width: 4rem;
+   height: auto;
+    cursor: pointer;
+    margin-top: 1rem;
+    position: relative;
+    right: 0;
+    z-index: 10;
+}
+/*style drop-down cart box */
+#cartbox{
+    position: relative;
+    right: 0;
+    top: 4rem;
+    background-color: #ccc;
+    border: 1px solid #9b9898;
+    padding: 1rem;
+    width: 20%;
+    display: none;
+    z-index: 100;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1rem;
+}
+#cartbox{
+    display: flex;}
+#cartbox ul{
+    margin-bottom: 1rem;
+}
+#cartbox p{
+    margin-top: 0rem;
+}
+/*style product display grid*/
+.items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem ;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 80%;
+    box-sizing: border-box;
+    align-items: center;
+}
+/*design products card*/
+.Wrapper1{
+   background-color: #b89f86; 
+    border: 1px solid #ccc;
+    padding:1.5rem ;
+    border-radius: 1rem;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.2s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;}
+    /*zoom effect when hovering the cards*/
+.Wrapper1:hover{
+    transform: scale(1.02);
+}
+.Wrapper1 p{
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color:rgb(250, 246, 239) ;
+}
+/*style the products img*/
+.Wrapper1 img{
+width: 100%;
+aspect-ratio: 1/1;
+border-radius: 0.5rem;
+object-fit: cover;
+margin-bottom: 1rem;
+}
+/*dropdown list of products size and type optins*/
+.size{
+    padding: 0 0.5rem ;
+    height:2.2rem;
+    font-size: 1rem;
+    text-align: center;
+    color:rgb(89, 51, 34);
+    border-radius: 0.75rem;
+    border: 1px;
+    background-color:#f3eee6 ;
+}
+/*add to cart button style*/
+.addtocart{
+margin-top: 0.75rem;
+padding: 0.75rem 1.5rem;
+background-color: #d47500;
+color:white ;
+border: none;
+border-radius: 0.75rem;
+cursor: pointer;
+justify-content: center;
+font-size: 1.2rem;
+transition: background-color 0.3s ease;
+overflow: hidden;
+display: flex;
+align-items: center;
+}
+/*hover effect on ad to cart button*/
+.addtocart:hover{
+background-color: #d68726;
+}
+/*design between size list and add to cart button*/
+.size,.addtocart{
+    width: 80%;
+    max-width: 16rem;
+    margin: 0 auto;
+}
+/*check mark style*/
+.check{
+    color: green;
+    font-size: 1.5rem;
+    z-index: 2;
+    position: absolute;
+}
+/*formatting the circle with the check mark*/
+.circle{
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    justify-content: center;
+    display: none;
+    align-items: center;
+    background-color: rgb(234, 230, 224);
+    color: green;
+    margin-right: 0.5rem;
+}
+/*design add to cart button after click on it*/
+.addtocart.added{
+    background:linear-gradient( #d37500,rgb(238,148,40),rgb(255,179,71));
+}
+/*show circle after adding*/
+.addtocart.added .circle{
+    display: flex;
+}
+/*rotary bearnig circut */
+.spinner{
+    position:absolute;
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid transparent;
+    border-top:2px solid green ;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    z-index: 1;
+}
+/*total price size*/
+#total-price{
+    font-size: 1.5rem;
+}
+/*style offer section*/
+.snackoffers{
+    padding: 2rem;
+    max-width: 90%;
+    margin: auto;
+    column-count: 3;
+    column-gap: 2rem;
+    column-rule: 0.4rem rgb(89, 51, 34) dashed;
+}
+/*style the head in offer section*/
+.snackoffers h1{
+    text-align: center;
+    color: rgb(89, 51, 34);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    column-span: all;
+}
+/*style offer cards*/
+.s-offers{
+    background-color: #f3eee6;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.75rem;
+    font-size: 1.7rem;
+   color: rgb(89, 51, 34);
+   break-inside: auto;
+}
+/*style offer title*/
+.s-offers h2{
+    margin-top: 0;
+    font-size: 1.9rem;
+    color: #d47500;
+}
+/*booking button style*/
+.bookingbtn{
+    text-align: center;
+    margin: 50vh 0;
+}
+.booking1{
+padding: 1rem 2rem;
+background-color: rgb(89, 51, 34);
+color: #ccc;
+font-size: 1rem;
+border: none;
+border-radius: 0.75rem;
+cursor: pointer;
+transition:background-color 0.3s ease, transform 0.2s ease;
+}
+/*footer design*/
+footer{
+    background-color: #b89f86;
+    color: rgb(250, 246, 239);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 3rem;
+    width: auto;
+    font-family: 'FontThree';
+    font-size: 0.8rem;
+}
+#contact{
+    color: rgb(250, 246, 239);
+    text-decoration: none;
+}
+/*rotation animation for the spinner*/
+@keyframes spin{
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(360deg);}
+}
+/* Three Responsiveness Devices */
+/* Extra small devices (Smart Phones) */
+@media screen and (max-width:600px) {
+.items{ grid-template-columns: 1fr;
+padding: 1rem;}
+.snackoffers{column-count: 1;}
+.cart{width: 3rem;}
+.container{padding: 1rem;}
+.Wrapper1 img{margin-bottom: 0.5rem;}
+#cartbox{width: 80%;
+left: 10%;}
+}
+
+/* Medium devices (Tablets) */
+@media screen and (min-width:768px) {
+.size{
+font-size: 1.4rem;
+height: 2.5rem;
+width: 70%;
+max-width: 18rem;
+}
+.addtocart{font-size: 1.3rem;
+padding: 1rem 2rem;}
+.Wrapper1 p{
+font-size: 1.1rem;
+}
+.producttype{font-size: 1.5rem;}
+.title{font-size: 2.5rem;}
+}
+.container{padding: 2rem 3rem;
+}
+footer{
+    font-size: 1rem;}
+/* Large devices (Desktop Browser) */
+@media screen and (min-width:992px) {
+.size{
+    font-size: 1rem;
+    height: 2.2rem;
+    width: 80%;
+    max-width: 16rem;
+}
+.addtocart{
+    font-size: 1.2rem;
+    padding: 0.75rem 1.5rem;
+}
+.Wrapper1 p{
+    font-size: 1.4rem;
+}
+}
