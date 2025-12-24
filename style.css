@@ -316,6 +316,7 @@ footer{
     color: rgb(250, 246, 239);
     text-decoration: none;
 }
+
 /*rotation animation for the spinner*/
 @keyframes spin{
     0%{transform: rotate(0deg);}
